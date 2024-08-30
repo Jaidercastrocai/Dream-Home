@@ -1,0 +1,107 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #282c34; /* Color de fondo del cuerpo */
+}
+
+form {
+    background-color: #0d0d0d;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más suave y centrada */
+    padding: 50px 35px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido verticalmente */
+    width: 400px;
+    margin: auto; /* Centra el formulario horizontalmente */
+}
+
+h2 {
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 20px; /* Espacio entre título y formulario */
+}
+
+p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px; /* Espacio entre párrafos */
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%; /* Ancho completo para que ocupe todo el formulario */
+    margin-bottom: 20px; /* Espacio entre campos */
+}
+
+input {
+    width: calc(100% - 40px); /* Ocupa casi todo el ancho disponible */
+    padding: 15px; /* Ajuste de relleno */
+    border-radius: 25px; /* Borde redondeado */
+    border: none; /* Sin borde */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    outline: none; /* Sin contorno al hacer foco */
+    font-size: 16px;
+    transition: box-shadow 0.3s ease; /* Transición suave */
+}
+
+input:focus {
+    box-shadow: 0 0 20px rgba(192, 203, 251, 0.7); /* Sombra enfocada */
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg, rgba(140, 43, 231, 1), rgba(61, 1, 245, 1));
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Transición suave */
+}
+
+.btn:hover {
+    background: rgb(153, 47, 252); /* Color de fondo al pasar el ratón */
+}
+
+.success,
+.error {
+    position: absolute;
+    top: -30px; /* Posición arriba del formulario */
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.success {
+    color: #eec830; /* Color de texto para éxito */
+}
+
+.error {
+    color: #e02000; /* Color de texto para error */
+}
+
+@media (max-width: 991px) {
+    body {
+        padding: 10px; /* Espacio interno reducido en dispositivos pequeños */
+    }
+
+    form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .input-wrapper {
+        width: 100%;
+    }
+
+    input {
+        width: calc(100% - 30px); /* Ancho ajustado para dispositivos pequeños */
+    }
+}

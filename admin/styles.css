@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.modal-body input {
+    margin-bottom: 10px;
+}
+
+.chart-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#estadisticas, #usuariosEstadisticas {
+    display: none;
+}
